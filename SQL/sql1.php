@@ -21,9 +21,12 @@
 
 
 <?php 
-	$servername = "localhost";
-	$username = "root";
-	$password = "";
+	$dbhost = getenv(DB_HOST);
+	$dbuser = getenv(DB_USER);
+	$dbpass = getenv(DB_PASS);
+	// $servername = "localhost";
+	// $username = "root";
+	// $password = "";
 	$db = "1ccb8097d0e9ce9f154608be60224c7c";
 
 	// Create connection

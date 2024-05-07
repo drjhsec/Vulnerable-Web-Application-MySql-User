@@ -24,12 +24,15 @@
 <div align="center" style="background-color:#afafaf;padding:60px;border-radius:0px 0px 80px 80px">
 <?php
 
+$dbhost = getenv(DB_HOST);
+$dbuser = getenv(DB_USER);
+$dbpass = getenv(DB_PASS);
 if (isset($_POST["submit"])) {
 
-   $dbhost = 'localhost';
-   $dbuser = 'root';
-   $dbpass = '';
-   $conn = mysqli_connect($dbhost, $dbuser, $dbpass);
+   // $dbhost = 'localhost';
+   // $dbuser = 'root';
+   // $dbpass = '';
+   $conn = mysqli_connect($MYSQL_, $dbuser, $dbpass);
 
    if(! $conn ) {
       die('Could not connect: ' . mysqli_error( $conn));
@@ -41,9 +44,9 @@ if (isset($_POST["submit"])) {
    mysqli_close($conn);
 }
 if (isset($_POST["submit1"])) {
-   $dbhost = 'localhost';
-   $dbuser = 'root';
-   $dbpass = '';
+   // $dbhost = 'localhost';
+   // $dbuser = 'root';
+   // $dbpass = '';
    $conn = mysqli_connect($dbhost, $dbuser, $dbpass);
 
    if ($conn) {
