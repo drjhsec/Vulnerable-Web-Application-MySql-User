@@ -32,6 +32,9 @@ if (isset($_POST["submit"])) {
    // $dbhost = 'localhost';
    // $dbuser = 'root';
    // $dbpass = '';
+   echo $dbhost;
+   echo $dbuser;
+   echo $dbpass;
    $conn = mysqli_connect($dbhost, $dbuser, $dbpass);
 
    if(! $conn ) {
