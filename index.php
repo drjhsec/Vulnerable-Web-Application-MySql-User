@@ -32,7 +32,7 @@ if (isset($_POST["submit"])) {
    // $dbhost = 'localhost';
    // $dbuser = 'root';
    // $dbpass = '';
-   $conn = mysqli_connect($MYSQL_, $dbuser, $dbpass);
+   $conn = mysqli_connect($dbhost, $dbuser, $dbpass);
 
    if(! $conn ) {
       die('Could not connect: ' . mysqli_error( $conn));

@@ -30,7 +30,7 @@
 	$db = "1ccb8097d0e9ce9f154608be60224c7c";
 
 	// Create connection
-	$conn = mysqli_connect($servername,$username,$password,$db);
+	$conn = mysqli_connect($dbhost,$username,$password,$db);
 
 	// Check connection
 	if (!$conn) {
